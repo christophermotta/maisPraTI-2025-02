@@ -1,0 +1,31 @@
+table{
+    border: 1px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  background-color: aqua;
+}
+
+ul{
+    padding: 5px;
+    background-color: aqua;
+    width: 60px;
+}
+
+li{
+    width: 50px;
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
