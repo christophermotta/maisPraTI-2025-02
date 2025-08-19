@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f4f4f4;
+    border: 3px solid red;
+    margin: 3px;
+    padding: 5px;
+}
+
+main{
+    background-color: #f4f4f4;
+    border: 3px solid red;
+    margin: 3px;
+    padding: 5px;
+}
+
+footer{
+    background-color: #f4f4f4;
+    border: 3px solid red;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+h2{
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.destaque{
+    font-style: italic;
+    background-color: rgba(0, 255, 255, 0.153);
+    margin-bottom: 10px;
+}
+
+.importante{
+    border-top: 4px solid blue;
+}
