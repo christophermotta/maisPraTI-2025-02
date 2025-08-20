@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Lista de Compras</h2>
+
+        <form id="form-adicionar">
+            <input type="text" id="input-item" placeholder="Digite aqui o item">
+            <button type="submit">Adicionar</button>
+            <button id="btn-clear">Limpar</button>
+        </form>
+        
+        <div id="filtro">
+            <button id="todos">Todos</button>
+            <button id="pendentes">Pendentes</button>
+            <button id="comprados">Comprados</button>
+
+            <select name="ordenar" id="ordenar">
+                <option value=""></option>
+                <option value="alfabetico">A - Z</option>
+                <option value="status1">Status</option>
+            </select>
+        </div>
+
+        <div class="items">
+            <ul id="list-items"></ul>
+        </div>
+
+        <p>Itens na lista: <span id="qtd-items"></span></p>
+
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
