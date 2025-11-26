@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Consultar endereço por CEP</h1>
+    
+    <label for="cep">Digite o CEP</label>
+    <input type="text" id="cep">
+    <button id="buscar">Buscar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        const inputCep = document.getElementById('cep')
+        const btnBuscar = document.getElementById('buscar')
+        const resultado = document.getElementById('resultado')
+
+        async function consultarCep() {
+            const cep = inputCep.value
+            const url = `https://viacep.com.br/ws/${cep}/json/`
+
+            try {
+                const resp = await fetch (url, { method: 'GET'})
+                const data = await resp.json()
+                console.log(data)
+
+                resultado.innerHTML = `
+                <ul>
+                    <li>CEP: ${data.cep}</li>
+                    <li>Logradouro: ${data.logradouro}</li>
+                    <li>Complemento: ${data.complemento}</li>
+                    <li>Bairro: ${data.bairro}</li>
+                    <li>Cidade: ${data.localidade}</li>
+                    <li>Estado: ${data.uf}</li> 
+                </ul>
+                `
+            }
+
+            catch (error){
+                console.error('Ocorreu algum erro:', erro)
+            }
+        }
+
+        btnBuscar.addEventListener('click', consultarCep)
+    </script>
+</body>
+</html>

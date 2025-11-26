@@ -1,0 +1,15 @@
+Justify-content: alinha na horizontal ————
+Align-items (self): alinha na vertical |
+Flex-direction: define a direção dos items
+
+$ Quando o flex-direction reverse é utilizado, o inicio e fim também são invertidos (ex: start = direita => esquerda)
+
+$ Quando o flex-direction column é utilizado, os metodos abaixo são afetados:
+Justify-content: alinha na vertical |
+Align-items: alinha na horizontal ————
+
+Order: utilizado para alterar a ordem dos objetos, a ordem padrão é zero (ex: order: -1 = obejeto ficará antes de todos os demais)
+
+Flex-wrap: Utilizado para definir quebras de linha
+Flex-flow: Unificação de "Flex-direction" e "Flex-wrap" (Como usar: flex-flow: propiedade directio propiedade wrap)
+Align-content: define o espaçamento das linhas, ou seja, equivalente ao align-items
